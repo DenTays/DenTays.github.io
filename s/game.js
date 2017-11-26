@@ -505,7 +505,7 @@ player.keyMove = function (){
 
 
 var texttttt = game.newTextObject({
-		x : width / 2 - 50, y : height / 2 - 10,
+		x : width / 2 - 70, y : height / 2 - 10,
 		size : 25, text : 'Restart',
 		color : 'white'
 	});
@@ -513,7 +513,7 @@ game.newLoop('end', function () {
 	game.fill('#1E1E1E');
 	
 	pjs.brush.drawTextS({
-		x : width / 2 - 50, y : height / 3 - 10,
+		x : width / 2 - 70, y : height / 3 - 10,
 		size : 30, text : 'You died!',
 		color : 'white'
 	});
