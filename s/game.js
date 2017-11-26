@@ -501,40 +501,8 @@ player.keyMove = function (){
 		}
 	};
 
-
-
-
-var texttttt = game.newTextObject({
-		x : width / 2 - 70, y : height / 2 - 10,
-		size : 25, text : 'Restart',
-		color : 'white'
-	});
-game.newLoop('end', function () {
-	game.fill('#1E1E1E');
-	
-	pjs.brush.drawTextS({
-		x : width / 2 - 70, y : height / 3 - 10,
-		size : 30, text : 'You died!',
-		color : 'white'
-	});
-	texttttt.draw();
-	
-	
-	
-	if (mouse.isPeekObject('LEFT', texttttt)) {
-		location.reload();
-	}
-	
-	
-
-});
-
 game.newLoop('game', function () {
 
-
-	if (health <= 0) {
-		game.startLoop('end')
-	}
 	
 	//music.play();
 	message.setPositionS(point(30, 120))
@@ -1094,6 +1062,12 @@ game.newLoop('game', function () {
 		color : 'black',
 		size : 15
 	})
+	
+	
+	
+	if (health <= 0) {
+		document.location.reload();
+	}
  	
 
 });
