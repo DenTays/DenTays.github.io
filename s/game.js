@@ -506,8 +506,8 @@ player.keyMove = function (){
 game.newLoop('game', function () {
 
 
-	if (progreesHealth.w <= 0) {
-		window.location.reload()
+	if (health <= 0) {
+		document.location.reload()
 	}
 	
 	//music.play();
