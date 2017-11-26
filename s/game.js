@@ -503,6 +503,32 @@ player.keyMove = function (){
 
 
 
+
+var reload = game.newTextObject({
+		x : width / 2 - 70, h : height / 3,
+		size : 25, text : 'Restart',
+		color : 'white'
+	});
+game.newLoop('end', function () {
+	game.fill('#1E1E1E');
+	
+	pjs.brush.drawText({
+		x : width / 2 - 40, h : height / 5,
+		size : 30, text : 'You died!',
+		color : 'white'
+	});
+	
+	
+	
+	
+	if (mouse.isPeekObject('LEFT', reload)) {
+		document.reload();
+	}
+	
+	reload.draw();
+
+});
+
 game.newLoop('game', function () {
 
 
@@ -1929,29 +1955,6 @@ game.newLoop('islands', function () {
 	}
 })
 
-game.newLoop('end', function () {
-	game.fill('#1E1E1E');
-	
-	pjs.brush.drawText({
-		x : width / 2 - 40, h : height / 5,
-		size : 30, text : 'You died!',
-		color : 'white'
-	});
-	
-	
-	var reload = game.newTextObject({
-		x : width / 2 - 70, h : height / 3,
-		size : 25, text : 'Restart',
-		color : 'white'
-	});
-	
-	if (mouse.isPeekObject('LEFT', reload)) {
-		document.reload();
-	}
-	
-	reload.draw();
-
-});
 
 
 game.startLoop('menu');
