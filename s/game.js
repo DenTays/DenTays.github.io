@@ -512,7 +512,7 @@ var reload = game.newTextObject({
 game.newLoop('end', function () {
 	game.fill('#1E1E1E');
 	
-	pjs.brush.drawText({
+	pjs.brush.drawTextS({
 		x : 40, h : 10,
 		size : 30, text : 'You died!',
 		color : 'white'
@@ -533,7 +533,7 @@ game.newLoop('game', function () {
 
 
 	if (health <= 0) {
-		game.setLoop('end');
+		location.reload();
 	}
 	
 	//music.play();
