@@ -504,7 +504,7 @@ player.keyMove = function (){
 
 
 
-var reload = game.newTextObject({
+var reload1 = game.newTextObject({
 		x : 70, h : 10,
 		size : 25, text : 'Restart',
 		color : 'white'
@@ -521,11 +521,11 @@ game.newLoop('end', function () {
 	
 	
 	
-	if (mouse.isPeekObject('LEFT', reload)) {
+	if (mouse.isPeekObject('LEFT', reload1)) {
 		document.reload();
 	}
 	
-	reload.draw();
+	reload1.draw();
 
 });
 
@@ -533,7 +533,7 @@ game.newLoop('game', function () {
 
 
 	if (health <= 0) {
-		location.reload();
+		game.startLoop('end')
 	}
 	
 	//music.play();
