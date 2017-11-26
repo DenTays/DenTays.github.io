@@ -507,7 +507,7 @@ game.newLoop('game', function () {
 
 
 	if (health <= 0) {
-		document.reload();
+		window.location.reload()
 	}
 	
 	//music.play();
