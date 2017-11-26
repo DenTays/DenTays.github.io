@@ -504,7 +504,7 @@ player.keyMove = function (){
 
 
 
-var reload1 = game.newTextObject({
+var texttttt = game.newTextObject({
 		x : width / 2 - 50, y : height / 2 + 80,
 		size : 25, text : 'Restart',
 		color : 'white'
@@ -517,15 +517,15 @@ game.newLoop('end', function () {
 		size : 30, text : 'You died!',
 		color : 'white'
 	});
+	texttttt.draw();
 	
 	
 	
-	
-	if (mouse.isPeekObject('LEFT', reload1)) {
+	if (mouse.isPeekObject('LEFT', texttttt)) {
 		document.reload();
 	}
 	
-	reload1.draw();
+	
 
 });
 
