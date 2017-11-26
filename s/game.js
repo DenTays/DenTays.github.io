@@ -506,7 +506,7 @@ player.keyMove = function (){
 game.newLoop('game', function () {
 
 
-	if (health <= 0) {
+	if (progreesHealth.w <= 0) {
 		window.location.reload()
 	}
 	
