@@ -1066,6 +1066,7 @@ game.newLoop('game', function () {
 	
 	
 	if (health <= 0) {
+		game.setLoop('pause');
 		document.location.reload();
 	}
  	
