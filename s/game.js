@@ -505,7 +505,7 @@ player.keyMove = function (){
 
 
 var texttttt = game.newTextObject({
-		x : width / 2 - 50, y : height / 2 + 80,
+		x : width / 2 - 50, y : height / 2 - 10,
 		size : 25, text : 'Restart',
 		color : 'white'
 	});
@@ -522,7 +522,7 @@ game.newLoop('end', function () {
 	
 	
 	if (mouse.isPeekObject('LEFT', texttttt)) {
-		document.reload();
+		location.reload();
 	}
 	
 	
