@@ -88,7 +88,7 @@ var laser = game.newRectObject({
 var intr = game.newTextObject({
 			x : width / 10,
 			y : height / 1.3,
-			text : 'Instruction',
+			text : 'Инструкция',
 			size : 30,
 			color : 'white',
 			font : 'font',
