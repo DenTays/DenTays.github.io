@@ -38,6 +38,7 @@ var drawBG = function () {
 	});
 };
 
+
 var gr = [], oldG;
 OOP.forInt(25, function (i) {
 	oldG = game.newImageObject({
