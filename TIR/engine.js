@@ -1,5 +1,5 @@
 var pjs = new PointJS('2D', 720, 480);
-pjs.system.initFullPage;
+pjs.system.initFullPage();
 
 var log = pjs.system.log;
 var game = pjs.game;
