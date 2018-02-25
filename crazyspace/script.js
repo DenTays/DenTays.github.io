@@ -58,7 +58,7 @@ var drawGR = function () {
 		el.move(p(-2, 0));
 
 		if (el.x + el.w < 0) {
-			el.x = oldG.x + oldG.w - 3;
+			el.x = oldG.x + oldG.w;
 			oldG = el;
 		}
 
@@ -151,7 +151,7 @@ var Game = function () {
 		var dX = oldBlock ? oldBlock.top.x + pjs.math.random(150, 280) : width;
 
 		var o = game.newImageObject({
-			file : 'img/block2.png',
+			file : 'img/block.png',
 			x : dX, y : 0,
 			w : width / 10,
 			angle : 180,
@@ -161,7 +161,7 @@ var Game = function () {
 		});
 
 		var o2 = game.newImageObject({
-			file : 'img/block2.png',
+			file : 'img/block.png',
 			x : dX, y : 0,
 			w : width / 10,
 			onload : function () {
