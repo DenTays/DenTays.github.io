@@ -1,4 +1,4 @@
-var wh = PointJS.game.getWH();
+var wh = new PointJS('2D', wh.w, wh.h).game.getWH();
 
 var pjs = new PointJS('2D', wh.w, wh.h);
 var log = pjs.system.log;
