@@ -1,6 +1,6 @@
-var wh = new PointJS('2D', wh.w, wh.h).game.getWH();
 
 var pjs = new PointJS('2D', wh.w, wh.h);
+pjs.system.initFullPage();
 var log = pjs.system.log;
 var game = pjs.game;
 var OOP = pjs.OOP;
