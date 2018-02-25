@@ -1,7 +1,6 @@
-var width = game.getWH().w;
-var height = game.getWH().h;
-var pjs = new PointJS('2D', width, height);
 
+var pjs = new PointJS('2D', 720, 480);
+pjs.system.initFullScale();
 var log = pjs.system.log;
 var game = pjs.game;
 var OOP = pjs.OOP;
